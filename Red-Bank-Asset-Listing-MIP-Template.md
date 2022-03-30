@@ -98,10 +98,10 @@ Note that fields with the “Binary” type (example, msg attribute for a WasmMs
 The proposal messages attribute should contain two WasmMsg “execute” calls in any order:
 
 
-'init_asset' call to the red bank with the parameters for how the asset will behave (see [schema](https://github.com/mars-protocol/mars-core/blob/4b877ae4bf352a42fd1d1506f054cce0cc824da3/contracts/mars-red-bank/schema/execute_msg.json#L43)).
+`init_asset` call to the red bank with the parameters for how the asset will behave (see [schema](https://github.com/mars-protocol/mars-core/blob/4b877ae4bf352a42fd1d1506f054cce0cc824da3/contracts/mars-red-bank/schema/execute_msg.json#L43)).
 
 
-'set_asset' call to the oracle with the parameters of how the price will be retrieved (see [schema](https://github.com/mars-protocol/mars-core/blob/4b877ae4bf352a42fd1d1506f054cce0cc824da3/contracts/mars-oracle/schema/execute_msg.json#L30)).
+`set_asset` call to the oracle with the parameters of how the price will be retrieved (see [schema](https://github.com/mars-protocol/mars-core/blob/4b877ae4bf352a42fd1d1506f054cce0cc824da3/contracts/mars-oracle/schema/execute_msg.json#L30)).
 
 ## Licensing
 
