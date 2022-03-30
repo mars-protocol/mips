@@ -5,12 +5,12 @@
 Delphi Labs
 ## References
 
-* Technical MIP Template
-* Red Bank Asset Listing MIP Template
-* Credit Line Extension MIP Template
-* General MIP Template
-* The Red Bank Asset Listing Risk Framework
-* The Credit Line Extension Risk Framework
+* [Technical MIP Template]()
+* [Red Bank Asset Listing MIP Template]()
+* [Credit Line Extension MIP Template]()
+* [General MIP Template]()
+* [The Red Bank Asset Listing Risk Framework]()
+* [The Credit Line Extension Risk Framework]()
 
 ## Summary
 
