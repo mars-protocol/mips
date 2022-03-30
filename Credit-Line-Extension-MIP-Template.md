@@ -1,40 +1,25 @@
-**Credit Line Extension MIP Template**
+# Credit Line Extension MIP Template
 
-**Credit Line Extension MIP Template**
+## Preamble
 
-**Preamble**
+    MIP#: <# to be assigned>
+    Title: <MIP title>
+    Author(s): <list of authors' names and/or email addresses and GitHub handles>
+    Contributors: <list of contributors’ names and/or email addresses and GitHub handles>
+    Tags: <Name of protocol or project seeking a credit line>
+    Type: MIP Type (Credit Line Extension MIP)
+    Category: Binding (Executable Purely On-Chain) vs. Signaling (Non-Binding Social Consensus Signal)
+    Status: <Assigned by MIP Editor>
+    Date Proposed: <yyyy-mm-dd>
+    Date Ratified: <yyyy-mm-dd>
+    Dependencies: <List of dependent MIPs if applicable>
+    Replaces: <List of MIP it is replacing if applicable>
 
-> MIP#: <# to be assigned>
-> 
-> 
-> Title: <MIP title>
-> 
-> Author(s): <list of authors' names and/or email addresses and GitHub handles>
-> 
-> Contributors: <list of contributors’ names and/or email addresses and GitHub handles>
-> 
-> Tags: <Name of protocol or project seeking a credit line>
-> 
-> Type: MIP Type (Credit Line Extension MIP)
-> 
-> Category: Binding (Executable Purely On-Chain) vs. Signaling (Non-Binding Social Consensus Signal)
-> 
-> Status: <Assigned by MIP Editor>
-> 
-> Date Proposed: <yyyy-mm-dd>
-> 
-> Date Ratified: <yyyy-mm-dd>
-> 
-> Dependencies: <List of dependent MIPs if applicable>
-> 
-> Replaces: <List of MIP it is replacing if applicable>
-> 
+## References
 
-**References**
+\* A list of supporting materials referenced by this MIP.
 
-- A list of supporting materials referenced by this MIP.
-
-**Summary**
+## Summary
 
 - A short description of how the credit line extension will be used. Suggest 30 words max.
 
