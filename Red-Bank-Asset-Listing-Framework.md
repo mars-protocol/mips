@@ -151,8 +151,3 @@ Note: The exposure limit will need to be implemented via governance.
 Not every asset accepted on Mars will be available for use as collateral. Specifically, assets with high centralization risk (D score in both CP variables) won’t be accepted as collateral.
 
 _Note: The proposed risk framework is not intended as financial advice and should not be relied upon; rather, it is being made available for educational purposes as a starting point for each person’s own independent review and analysis of risks. The risk framework could fail to account for certain risks or could fail to adequately weigh the risks that it does account for. Use at your own risk. No representation, warranty, guaranty, indemnity or assumption of risk is being provided hereby. See also the [Mars Disclaimers/Disclosures](https://mars-protocol.medium.com/mars-disclaimers-disclosures-f44cc7c54a33)._
-
-
-Content on this page should be migrated to GitHub with the title Red Bank Asset Listing Risk Framework: [https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/red-bank-risk-framework](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/red-bank-risk-framework)
-
-Desired destination link: [https://github.com/mars-protocol/mips/Red-Bank-Asset-Listing-Framework.md](https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md)
