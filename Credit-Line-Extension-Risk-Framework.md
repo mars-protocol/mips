@@ -125,15 +125,22 @@ To calculate the maximum intraday change (MIC), the above calculation is done fo
 Now, each strategy will be scored based on the above metrics as follows:
 
 ![assets/example2_tab_1.png](assets/example2_tab_1.png)
+_* Strategies with a score of 0 in any of the above categories won’t be able to receive leverage._
 Then, based on the above score the maximum leverage will be determined as follows:
 ![assets/example2_stip_3.png](assets/example2_stip_3.png)
 
-_* Strategies with a score of 0 in any of the above categories won’t be able to receive leverage._
 
 Having defined the maximum leverage, the liquidation threshold and liquidation bonus will be determined as follows:
 
-
 ![assets/example2_tab_2.png](assets/example2_tab_2.png)
+The liquidation bonus should be understood in the context of the liquidation process, which should work as follows:
+
+1. When a position’s health factor falls below the liquidation threshold, the position can be liquidated by any user. 
+2. When a liquidator liquidates a position, the following happens: 
+  * The liquidator provides the necessary assets to repay the debt (or a portion of it). 
+  * For performing that service, the liquidator receives LP tokens (from the liquidated strategy) worth the sum of the debt and the liquidation bonus. For example, if a liquidator repays 100 UST of a strategy farming MIR/UST, the liquidator would receive 105 UST (debt + liquidation bonus - in this case 5% liquidation bonus is assumed) worth of MIR/UST LP tokens for performing the liquidation. 
+  * The remaining assets (if any) are left in the pool as an open farming position that belongs to the liquidated user.
+
 
 [https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework)
 
