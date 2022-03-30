@@ -5,8 +5,8 @@ Naturally, C2C lending also poses additional risks for Mars. These risks stem fr
 One of the tools intended for this purpose is the C2C lending risk framework, which aims to mitigate the risks involved in this process by standardizing the way in which those risks are measured and providing a conservative and thorough methodology for determining:
 Content on this page should be migrated to GitHub with the title Credit Line Extension Risk Framework: 
 
-1. Whether a given SC* should be extended a loan. 
-2. The specific risk parameters[^1] associated with that loan.
+1. Whether a given SC[^1] should be extended a loan. 
+2. The specific risk parameters associated with that loan.
 
     [^1]: This framework will specifically focus on SCs requesting loans to deploy them in leveraged yield farming strategies, but could be expanded eventually to incorporate other use cases.
 
