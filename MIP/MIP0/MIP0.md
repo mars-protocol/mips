@@ -185,25 +185,22 @@ Externally referenced materials are not MIP content and are not ratified when a 
 
 ### Technical MIP Template
 
-* The Technical MIP Template should be used for MIPs for changes to certain configurable aspects of the Mars Smart Contracts (binding), which can be modified directly by on-chain votes, or code changes to the Mars Protocol (signaling), which require upgrading the protocol.
-* The Technical MIP Template is located at [https://github.com/mars-protocol/mips/General-MIP-Template.md](https://github.com/mars-protocol/mips/General-MIP-Template.md).
+The [Technical MIP Template](https://github.com/mars-protocol/mips/General-MIP-Template.md) should be used for MIPs for changes to certain configurable aspects of the Mars Smart Contracts (binding), which can be modified directly by on-chain votes, or code changes to the Mars Protocol (signaling), which require upgrading the protocol.
 
 ### Red Bank Asset Listing MIP Template
 
-* The Red Bank Asset Listing MIP Template should be used for MIPs when proposing support for a new asset that’s not currently supported by the Red Bank.
-* All Red Bank Asset Listing MIPs should meet the specifications of the Red Bank Asset Listing Risk Framework, which is located at [https://github.com/mars-protocol/mips/Red-Bank-Asset-Listing-Framework.md](https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md).
-* The Red Bank Asset Listing MIP Template is located at [https://github.com/mars-protocol/mips/Red-Bank-Asset-Listing-MIP-Template.md](https://github.com/mars-protocol/mips/Red-Bank-Asset-Listing-MIP-Template.md).
+* The [Red Bank Asset Listing MIP Template](https://github.com/mars-protocol/mips/Red-Bank-Asset-Listing-MIP-Template.md) should be used for MIPs when proposing support for a new asset that’s not currently supported by the Red Bank.
+* All Red Bank Asset Listing MIPs should meet the specifications of the [Red Bank Asset Listing Risk Framework](https://github.com/mars-protocol/mips/Red-Bank-Asset-Listing-Framework.md).
 
 ### Credit Line Extension MIP Template
 
 * The Credit Line Extension MIP Template should be used for MIPs when proposing the extension of a credit line for a specific set of smart contracts.
-* All Credit Line Extension MIPs should meet the specifications of the Credit Line Extension Risk Framework, which is located at [https://github.com/mars-protocol/mips/Credit-Line-Extension-Risk-Framework.md](https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md).
-* The Credit Line Extension MIP Template is located at [https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md](https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md).
+* All Credit Line Extension MIPs should meet the specifications of the [Credit Line Extension Risk Framework](https://github.com/mars-protocol/mips/Credit-Line-Extension-Risk-Framework.md).
+* The [Credit Line Extension MIP Template](https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md).
 
 ### General MIP Template
 
-* The General MIP Template should be used for MIPs whenever a more specific template is not more appropriate.
-* The General MIP Template is located at [https://github.com/mars-protocol/mips/General-MIP-Template.md](https://github.com/mars-protocol/mips/Technical-MIP-Template.md).
+* The [General MIP Template](https://github.com/mars-protocol/mips/General-MIP-Template.md) should be used for MIPs whenever a more specific template is not more appropriate.
 
 ### MIP0: MIP Editors
 
