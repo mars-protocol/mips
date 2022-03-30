@@ -128,9 +128,7 @@ Now, each strategy will be scored based on the above metrics as follows:
 Then, based on the above score the maximum leverage will be determined as follows:
 ![assets/example2_stip_3.png](assets/example2_stip_3.png)
 
-*
-* Strategies with a score of 0 in any of the above categories won’t be able to receive leverage.
-*
+** Strategies with a score of 0 in any of the above categories won’t be able to receive leverage.*
 
 Having defined the maximum leverage, the liquidation threshold and liquidation bonus will be determined as follows:
 
