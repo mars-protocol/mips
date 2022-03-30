@@ -40,7 +40,71 @@ The first filter a new SC must pass in order to be extended a loan under this fr
 * Significant bug bounty for a minimum of 2 weeks. 
   * On testnet: Minimum $1M for critical bugs. 
   * On mainnet: Minimum $3M for critical bugs.
+
 ### Trust minimization:
+* The SC is immutable or, in case it’s not, any changes or upgrades to the SC that are made after the SC is approved for Mars C2C lending need to be approved by Mars governance (whether through a full token holder vote or a multisig committee approved for this purpose). 
+* The SC is always in control of the borrowed assets. 
+* The oracle used for the leveraged yield farming strategy is decentralized and robust. 
+  * If the oracle used is a TWAP, the specific implementation should be that of the Mars TWAP Oracle. 
+* The specific implementation of each strategy needs to adhere to the risk parameters covered in this framework.
+
+## Other SCs and Assets Assessment
+
+The other SCs and assets assessment will follow a similar methodology as the process for assessing the Base SC. Specifically, each of the other SCs and the protocols associated with each asset a strategy employs will need to meet the following minimum safety criteria:
+
+### Technical quality:
+* Audited by a reputable firm. 
+* High quality code: 
+  * Written with best practices or using battle tested code. 
+  * Adequate, thorough documentation. 
+  * High quality tests, including unit tests and integration tests. 
+* SCs interacting with the Base SC should be singleton: there's a specific instance of the SC that is already deployed on mainnet that is clearly identifiable.
+
+### Trust minimization: 
+A SC or protocol may meet the minimum requirements through any of the following two combinations:
+
+* The SCs are immutable or are controlled by a DAO with safe processes in place. 
+* There’s still some centralization around the key SCs, but the team behind the project is excellent all around (with strong technical and crypto expertise) and there’s a plan for progressively decentralizing the protocol. Additionally, in this case there should also be a timelock of at least 48 hours (preferably more) before any changes are made effective in the protocol.
+
+
+Note that market risk will not be part of this initial assets filter. This is intentional, though, as market risk will be the main input for the risk parameters definition methodology, which will be explored in the following sections.
+
+## Example 1: SC and Assets Assessment
+
+This example is intended to help the reader differentiate between the protocols a given strategy interacts with and the assets it employs.
+Let a new SC (from Protocol X) be requesting a C2C loan from Mars.
+The loan will be used by Protocol X to deploy a leveraged yield farming strategy for mETH/UST on top of Mirror.
+Now, the first step would be the SC assessment, which would include the SC requesting the loan (from Protocol X), as well as the SCs the strategy interacts with. In this case those SCs would be the pool contract from Astroport (mETH/UST) and the staking contract from Mirror (where the LP shares are deposited to receive MIR rewards).
+The assets the strategy employs, on the other hand, would be mETH and UST, which would need to meet the aforementioned minimum criteria for the strategy to move on to the risk parameters definition phase.
+
+## Risk Parameters
+
+Before defining the risk parameters methodology, it’s worth exploring what the risk parameters are:
+
+**Health Factor**: Determines the safety of a user’s leveraged yield farming position. The higher the Health Factor, the safer a position is and vice versa. A Health Factor below 1 indicates that the position is effectively bankrupt (value of assets < value of debt). The Health Factor for a given position i is calculated as follows:
+
+![assets/healthfactor_formula.png](assets/healthfactor_formula.png)
+
+where value of assets includes all assets held by the position. For example, for leveraged yield farming strategies on top of Mirror, these assets will be denominated in LP shares of the given pool the strategy is deploying assets to.
+
+**Maximum Leverage**: Indicates the maximum amount of debt a user can take when opening or adjusting a position given the user’s deposited collateral. The Initial Leverage of a position must always be less than or equal to the Maximum Leverage for the strategy. For example, a Maximum Leverage of 3 indicates that a user who provides 100 UST worth of assets as collateral can borrow up to 200 UST worth of assets for that strategy. The Initial Leverage of a given position i (before the assets are deployed to the strategy) can be calculated as follows:
+
+![assets/initial_leverage_formula.png](assets/initial_leverage_formula.png)
+
+**Liquidation Threshold**: Determines the level at which a position is considered to be undercollateralized and can be liquidated. For example, a Liquidation Threshold of 1.1 indicates that when the Health Factor of a position within the given strategy drops below 1.1, the position can be liquidated. The Liquidation Threshold will always be above 1 (to avoid bankrupt positions) and below the initial Health Factor at Maximum Leverage (which serves as a margin of safety for users that employ Maximum Leverage).
+
+**Liquidation Bonus**: Determines the bonus the liquidator receives when it liquidates a position. This bonus is paid from the collateral of the user that gets liquidated.
+
+**Maximum Cap per Strategy**: Indicates the maximum amount of assets Mars will be able to deploy to a given strategy. If multiple SCs are deploying the same strategy, the Maximum Size will need to be divided between those SCs. In addition to an overall maximum cap per strategy, Mars will be able to determine a maximum cap per protocol implementing that strategy on an ad hoc basis.
+
+**Minimum Position Size**: Indicates the minimum size a new position needs to have in order to be opened. For a given position i, its size is defined as:
+![assets/position_size.png](assets/position_size.png)
+
+**TWAP Oracle Parameters**[^2] (only applicable if the strategy is using a TWAP oracle): 
+* Window of the TWAP: Indicates the minimum period of time that needs to pass for a new price to be considered for the TWAP calculation. 
+* Minimum size of the liquidity pool: Indicates the minimum liquidity a pool needs to have for an oracle using that pool to be accepted for a given strategy.
+*Research is currently being undertaken to establish these parameters in a rigorous manner. Thus, the methodology for establishing these parameters will not be provided within this framework but rather in a future research report.
+    [^2]:Research is currently being undertaken to establish these parameters in a rigorous manner. Thus, the methodology for establishing these parameters will not be provided within this framework but rather in a future research report.
 [https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework)
 
 Desired destination link: [https://github.com/mars-protocol/mips/Credit-Line-Extension-Risk-Framework.md](https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md)
