@@ -91,7 +91,8 @@ Note that fields with the “Binary” type (example, msg attribute for a WasmMs
 
 The proposal messages attribute should contain a single WasmMsg “execute” call:
 
-    update_uncollateralized_loan_limit' call with the address of the receiver of the credit and the corresponding limit (see[`schema`](https://github.com/mars-protocol/mars-core/blob/4b877ae4bf352a42fd1d1506f054cce0cc824da3/contracts/mars-red-bank/schema/execute_msg.json#L147)). ​
+    update_uncollateralized_loan_limit' call with the address of the receiver of the credit and the corresponding limit 
+(see [schema](https://github.com/mars-protocol/mars-core/blob/4b877ae4bf352a42fd1d1506f054cce0cc824da3/contracts/mars-red-bank/schema/execute_msg.json#L147)). ​
 
 ## Licensing
 
