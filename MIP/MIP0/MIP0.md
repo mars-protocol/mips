@@ -194,9 +194,8 @@ The [Technical MIP Template](https://github.com/mars-protocol/mips/General-MIP-T
 
 ### Credit Line Extension MIP Template
 
-* The Credit Line Extension MIP Template should be used for MIPs when proposing the extension of a credit line for a specific set of smart contracts.
+* The [Credit Line Extension MIP Template](https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md) should be used for MIPs when proposing the extension of a credit line for a specific set of smart contracts.
 * All Credit Line Extension MIPs should meet the specifications of the [Credit Line Extension Risk Framework](https://github.com/mars-protocol/mips/Credit-Line-Extension-Risk-Framework.md).
-* The [Credit Line Extension MIP Template](https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md).
 
 ### General MIP Template
 
