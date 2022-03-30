@@ -141,7 +141,25 @@ The liquidation bonus should be understood in the context of the liquidation pro
     * For performing that service, the liquidator receives LP tokens (from the liquidated strategy) worth the sum of the debt and the liquidation bonus. For example, if a liquidator repays 100 UST of a strategy farming MIR/UST, the liquidator would receive 105 UST (debt + liquidation bonus - in this case 5% liquidation bonus is assumed) worth of MIR/UST LP tokens for performing the liquidation. 
     * The remaining assets (if any) are left in the pool as an open farming position that belongs to the liquidated user.
 
+## Maximum Cap per Strategy and Minimum Position Size
+The maximum size of a given strategy will depend on the liquidity of the strategy’s AMM pool. For a given strategy i the maximum size will be determined as follows:
 
+![assets/example2_stip_4.png](assets/example2_stip_4.png)
+
+This parameter is intended to guarantee that the pool always has enough liquidity for the strategy’s liquidation process to work properly. To that end, the maximum size of a given strategy is capped at 20% of the pool’s liquidity.
+
+Note: In order to be conservative and smooth out any abrupt changes in liquidity in any given day, the pool liquidity used in the above will be determined as:
+
+![assets/example2_stip_5.png](assets/example2_stip_5.png)
+
+The minimum size a new position should have is 100 UST. Smaller positions won’t be allowed to be created. The rationale behind this measure is to guarantee that liquidators have an incentive to liquidate even the smallest positions. For this to be the case, the liquidation bonus needs to be greater than the fees paid to liquidate a given position.
+
+## Conclusion
+Having a consistent, well-thought-out, community-applied risk framework is critical to ensure C2C lending is safe for all participants involved, and the C2C Lending Risk Framework can serve as a strong starting point. By standardizing the way risk is measured and parameters are determined, the proposed framework would enable different strategies to be objectively compared and assessed.
+This framework proposes a two step process for a new SC to be extended a loan. The first step involves assessing the SC itself and the protocols and the assets the SC interacts with. Following this first step, the framework defines how the different risk parameters should be set for the given strategy.
+Even though this framework should set an initial robust foundation for C2C lending to safely grow in the years to come, in order to be effective it must be adopted and consistently enforced by Mars governance. Furthermore, it cannot be static, but must be continually reevaluated, adapted and improved by the Mars community as DeFi matures and more empirical data is gathered around C2C lending.
+  
+  *Note:* The proposed risk framework is not intended as financial advice and should not be relied upon; rather, it is being made available for educational purposes as a starting point for each person’s own independent review and analysis of risks. The risk framework could fail to account for certain risks or could fail to adequately weigh the risks that it does account for. Use at your own risk. No representation, warranty, guaranty, indemnity or assumption of risk is being provided hereby. See also the Mars Disclaimers/Disclosures.
 [https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework)
 
 Desired destination link: [https://github.com/mars-protocol/mips/Credit-Line-Extension-Risk-Framework.md](https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md)
