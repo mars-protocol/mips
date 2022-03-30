@@ -77,7 +77,7 @@ The loan will be used by Protocol X to deploy a leveraged yield farming strategy
 Now, the first step would be the SC assessment, which would include the SC requesting the loan (from Protocol X), as well as the SCs the strategy interacts with. In this case those SCs would be the pool contract from Astroport (mETH/UST) and the staking contract from Mirror (where the LP shares are deposited to receive MIR rewards).
 The assets the strategy employs, on the other hand, would be mETH and UST, which would need to meet the aforementioned minimum criteria for the strategy to move on to the risk parameters definition phase.
 
-## Risk Parameters
+### Risk Parameters
 
 Before defining the risk parameters methodology, it’s worth exploring what the risk parameters are:
 
@@ -105,6 +105,38 @@ where value of assets includes all assets held by the position. For example, for
 * Minimum size of the liquidity pool: Indicates the minimum liquidity a pool needs to have for an oracle using that pool to be accepted for a given strategy.
 *Research is currently being undertaken to establish these parameters in a rigorous manner. Thus, the methodology for establishing these parameters will not be provided within this framework but rather in a future research report.
     [^2]:Research is currently being undertaken to establish these parameters in a rigorous manner. Thus, the methodology for establishing these parameters will not be provided within this framework but rather in a future research report.
+
+
+### Maximum Leverage, Liquidation Threshold and Liquidation Bonus
+
+The Maximum Leverage will be defined based on three metrics: the maximum intraday drawdown, the maximum intraday increase and and the daily volatility of the assets that are part of the strategy. For each asset pair, these variables will be calculated as follows:
+
+* The maximum intraday change (MIC) will be measured as the maximum price change (from high to low) in a trading day over the last 365 days. 
+
+* The daily volatility (DV) will be measured as the standard deviation of the logarithmic daily returns of the base asset in terms of the quote asset for a given period of time. Specifically, the daily volatility will be calculated for the previous 30, 60 and 90 days. The maximum of these 3 values will be the chosen metric for determining the maximum leverage.
+
+## Example 2: Maximum intraday change
+For a bLUNA/LUNA leveraged yield farming strategy the base asset will be bLUNA and the quote asset LUNA. The intraday change during a given day will be calculated as a multiple as follows:
+![assets/example2_stip_1.png](assets/example2_stip_1.png)
+To give a numerical example:
+![assets/example2_stip_2.png](assets/example2_stip_2.png)
+To calculate the maximum intraday change (MIC), the above calculation is done for each day during the last 365 days and the maximum value is selected as the MIC.
+
+Now, each strategy will be scored based on the above metrics as follows:
+
+![assets/example2_tab_1.png](assets/example2_tab_1.png)
+Then, based on the above score the maximum leverage will be determined as follows:
+![assets/example2_stip_3.png](assets/example2_stip_3.png)
+
+*
+* Strategies with a score of 0 in any of the above categories won’t be able to receive leverage.
+*
+
+Having defined the maximum leverage, the liquidation threshold and liquidation bonus will be determined as follows:
+
+
+![assets/example2_tab_2.png](assets/example2_tab_2.png)
+
 [https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework)
 
 Desired destination link: [https://github.com/mars-protocol/mips/Credit-Line-Extension-Risk-Framework.md](https://github.com/mars-protocol/mips/Credit-Line-Extension-MIP-Template.md)
