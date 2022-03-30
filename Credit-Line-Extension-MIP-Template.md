@@ -89,10 +89,9 @@ To submit a proposal a send call needs to be done to the MARS token, sending at 
 
 Note that fields with the “Binary” type (example, msg attribute for a WasmMsg “execute”) need to be base64 encoded.
 
-The proposal messages attribute should contain a single WasmMsg “execute” call:
+The proposal messages attribute should contain a single WasmMsg “execute” call (see [schema](https://github.com/mars-protocol/mars-core/blob/4b877ae4bf352a42fd1d1506f054cce0cc824da3/contracts/mars-red-bank/schema/execute_msg.json#L147)):
 
-    update_uncollateralized_loan_limit' call with the address of the receiver of the credit and the corresponding limit 
-(see [schema](https://github.com/mars-protocol/mars-core/blob/4b877ae4bf352a42fd1d1506f054cce0cc824da3/contracts/mars-red-bank/schema/execute_msg.json#L147)). ​
+    update_uncollateralized_loan_limit' call with the address of the receiver of the credit and the corresponding limit  ​
 
 ## Licensing
 
