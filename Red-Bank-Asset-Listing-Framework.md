@@ -48,8 +48,18 @@ Each asset will receive a score from A to D in the relevant variables for each c
 
 **Oracle Risk:**
 ![assets/redba_tab4.png](assets/redba_tab4.png)
+
 _^See an example of profit/cost estimation research [here](https://members.delphidigital.io/reports/attack-cost-and-profit-from-manipulating-constant-product-market-maker-twap-oracles-in-defi-protocols/)_
 
+_*Since there’s more subjectivity involved in assessing these qualitative variables, only the conditions for the highest (A) and lowest (D) scores are defined. Anything in between will be scored on a case by case basis according to the asset’s positioning between these two points._
+
+_ ** In contrast to the other qualitative variables, the Oracle implementation can only be scored either A or D. Given the critical importance of this element within the Mars architecture, the scoring methodology should be more binary: either the available oracle is secure enough or it isn’t._
+
+
+
+After determining the score for each variable within each category, a final numeric score per category is computed. This score will be the average score of each of the category’s variables, according to the following table:
+
+![assets/redba_tab5.png](assets/redba_tab5.png)
 
 
 
