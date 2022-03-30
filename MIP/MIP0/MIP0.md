@@ -9,7 +9,7 @@ Delphi Labs
 * [Red Bank Asset Listing MIP Template](https://github.com/mars-protocol/mips/blob/main/Red-Bank-Asset-Listing-Framework.md)
 * [Credit Line Extension MIP Template](https://github.com/mars-protocol/mips/blob/main/Credit-Line-Extension-MIP-Template.md)
 * [General MIP Template](https://github.com/mars-protocol/mips/blob/main/General-MIP-Template.md)
-* [The Red Bank Asset Listing Risk Framework]()
+* [The Red Bank Asset Listing Risk Framework](https://github.com/mars-protocol/mips/blob/main/Red-Bank-Asset-Listing-Risk-Framework.md)
 * [The Credit Line Extension Risk Framework](https://github.com/mars-protocol/mips/blob/main/Credit-Line-Extension-Risk-Framework.md)
 
 ## Summary
