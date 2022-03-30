@@ -17,21 +17,21 @@
 
 ## References
 
-\* A list of supporting materials referenced by this MIP.
+- A list of supporting materials referenced by this MIP.
 
 ## Summary
 
 - A short description of how the credit line extension will be used. Suggest 30 words max.
 
-**Abstract**
+## Abstract
 
 - A 2-4 sentence description of the full MIP going through the use case for the credit line and who will and how it will be implemented.
 
-**Motivation**
+## Motivation
 
 - A short description of the motivation behind the MIP.
 
-**Basic Information**
+## Basic Information
 
 For the Base SC, the other SCs and the assets the strategy interacts with, links to the following:
 
@@ -40,7 +40,7 @@ For the Base SC, the other SCs and the assets the strategy interacts with, links
 - Project documentation.
 - Communities.
 
-**Technical Risk**
+## Technical Risk
 
 For the Base SC, the other SCs and the assets the strategy interacts with, links to the following:
 
@@ -51,7 +51,7 @@ For the Base SC, the other SCs and the assets the strategy interacts with, links
     - The hash of the contract binary must match the code on GitHub.
 - Testnet contract (only applies for Base SC).
 
-**Centralization Risk**
+## Centralization Risk
 
 For the Base SC:
 
@@ -64,7 +64,7 @@ For the other SCs and assets the Base SC interacts with:
 
 - SC upgradability: How is the SC upgradable? Is it immutable, DAO upgradable or controlled by a multisig? If it’s a multisig, what does it control and who are the signers? Is there a timelock in place?
 
-**Risk Parameters Suggestion**
+## Risk Parameters Suggestion
 
 For each parameter suggestion, all relevant information used to determine that parameter should be provided, following the methodology described in the [Credit Line Extension Risk Framework](https://github.com/mars-protocol/mips/Credit-Line-Extension-Risk-Framework.md). The suggested parameters should be:
 
@@ -75,15 +75,15 @@ For each parameter suggestion, all relevant information used to determine that p
 - Minimum Position Size
 - TWAP Oracle Implementation (if TWAP is used for the strategy)
 
-**Poll**
+## Poll
 
 - The MRC should contain a link to a pre-existing poll to gather community sentiment for the MRC.
 
-**Implementation**
+## Implementation
 
 - Describes how the MIP can be implemented or if it was already implemented, how it was done.
 
-**Technical Instructions for Submitting a Credit Line Extension Proposal**
+## Technical Instructions for Submitting a Credit Line Extension Proposal
 
 To submit a proposal a send call needs to be done to the MARS token, sending at least the proposal_required_deposit amount stored (as uMARS or 10 ^ -6 MARS) in config. The msg attribute should contain the submit_proposal receive msg as detailed in the schema.
 
@@ -91,10 +91,9 @@ Note that fields with the “Binary” type (example, msg attribute for a WasmMs
 
 The proposal messages attribute should contain a single WasmMsg “execute” call:
 
-> 'update_uncollateralized_loan_limit' call with the address of the receiver of the credit and the corresponding limit (see schema). ​
-> 
+    'update_uncollateralized_loan_limit' call with the address of the receiver of the credit and the corresponding limit (see schema). ​
 
-**Licensing**
+## Licensing
 
 - Recommended licenses for developed code:
     - MIT: Expat/MIT/X11 license
