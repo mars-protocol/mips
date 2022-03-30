@@ -1,7 +1,8 @@
 # Mars Improvement Process
 
 ## MRC-0: The Mars Improvement Proposal (MIPs) Framework
-
+## Proposal Authors
+Delphi Labs
 ## References
 
 * Technical MIP Template

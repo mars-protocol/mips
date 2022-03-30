@@ -16,7 +16,7 @@
     Replaces: <List of MIP it is replacing if applicable>
  
 
-## References**
+## References
 
 * A list of supporting materials referenced by this MIP.
 
