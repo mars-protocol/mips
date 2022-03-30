@@ -53,7 +53,7 @@ _^See an example of profit/cost estimation research [here](https://members.delph
 
 _*Since there’s more subjectivity involved in assessing these qualitative variables, only the conditions for the highest (A) and lowest (D) scores are defined. Anything in between will be scored on a case by case basis according to the asset’s positioning between these two points._
 
-_ ** In contrast to the other qualitative variables, the Oracle implementation can only be scored either A or D. Given the critical importance of this element within the Mars architecture, the scoring methodology should be more binary: either the available oracle is secure enough or it isn’t._
+_** In contrast to the other qualitative variables, the Oracle implementation can only be scored either A or D. Given the critical importance of this element within the Mars architecture, the scoring methodology should be more binary: either the available oracle is secure enough or it isn’t._
 
 
 
