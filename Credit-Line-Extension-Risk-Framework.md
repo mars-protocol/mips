@@ -137,9 +137,9 @@ The liquidation bonus should be understood in the context of the liquidation pro
 
 1. When a position’s health factor falls below the liquidation threshold, the position can be liquidated by any user. 
 2. When a liquidator liquidates a position, the following happens: 
-  * The liquidator provides the necessary assets to repay the debt (or a portion of it). 
-  * For performing that service, the liquidator receives LP tokens (from the liquidated strategy) worth the sum of the debt and the liquidation bonus. For example, if a liquidator repays 100 UST of a strategy farming MIR/UST, the liquidator would receive 105 UST (debt + liquidation bonus - in this case 5% liquidation bonus is assumed) worth of MIR/UST LP tokens for performing the liquidation. 
-  * The remaining assets (if any) are left in the pool as an open farming position that belongs to the liquidated user.
+    * The liquidator provides the necessary assets to repay the debt (or a portion of it). 
+    * For performing that service, the liquidator receives LP tokens (from the liquidated strategy) worth the sum of the debt and the liquidation bonus. For example, if a liquidator repays 100 UST of a strategy farming MIR/UST, the liquidator would receive 105 UST (debt + liquidation bonus - in this case 5% liquidation bonus is assumed) worth of MIR/UST LP tokens for performing the liquidation. 
+    * The remaining assets (if any) are left in the pool as an open farming position that belongs to the liquidated user.
 
 
 [https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework)
