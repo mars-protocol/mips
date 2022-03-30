@@ -25,7 +25,7 @@
 
 ## Abstract
 
-- A 2-4 sentence description of the full MIP going through the use case for the credit line and who will and how it will be implemented.
+- A 2-4 sentence description of the full MIP going through the use case for the credit line and by whom and how it will be implemented.
 
 ## Motivation
 
@@ -91,7 +91,7 @@ Note that fields with the “Binary” type (example, msg attribute for a WasmMs
 
 The proposal messages attribute should contain a single WasmMsg “execute” call:
 
-    'update_uncollateralized_loan_limit' call with the address of the receiver of the credit and the corresponding limit (see schema). ​
+    'update_uncollateralized_loan_limit' call with the address of the receiver of the credit and the corresponding limit (see [schema](https://github.com/mars-protocol/mars-core/blob/4b877ae4bf352a42fd1d1506f054cce0cc824da3/contracts/mars-red-bank/schema/execute_msg.json#L147)). ​
 
 ## Licensing
 
