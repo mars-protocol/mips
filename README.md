@@ -63,14 +63,14 @@ MIPs are written using Markdown and hosted on GitHub. Please note that all MIPs 
 
 Markdown is a very simple markup language for formatting text, i.e., adding headers, bullet lists, italicized text, et cetera. When working with MIPs, you should use GitHub-flavored Markdown.
 
-> [GitHub’s Mastering Markdown](https://guides.github.com/features/mastering-markdown/) will get you up to speed in no time. The online Markdown editor [HackMD](https://hackmd.io/) is a solid platform for practice and production.
+[GitHub’s Mastering Markdown](https://guides.github.com/features/mastering-markdown/) will get you up to speed in no time. The online Markdown editor [HackMD](https://hackmd.io/) is a solid platform for practice and production.
 
 ### GitHub
 
 [GitHub](https://github.com/) is a code hosting platform for version control and collaboration built on [git](https://git-scm.com/), a version control software. GitHub is complex and may seem daunting at first, but only a basic familiarity is necessary for our purposes.
 
-> We recommend that you read these two short guides: [Hello World](https://guides.github.com/activities/hello-world/) and [Forking Projects](https://guides.github.com/activities/forking/).
-> 
+We recommend that you read these two short guides: [Hello World](https://guides.github.com/activities/hello-world/) and [Forking Projects](https://guides.github.com/activities/forking/).
+
 
 ### Templates
 
