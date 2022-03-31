@@ -53,11 +53,11 @@ If you feel that your API does not fit in any pre-existing sub-categories, you c
 
 MIPs can be brought forth and proposed by anyone.
 
-If you're interested in proposing a MIP, please read below for more details around the lifecycle of a MIP as well as [templates](https://github.com/mars-protocol/mips/blob/main/General-MIP-Template.md) you should use to submit your ideas to the Mars community.
+If you're interested in proposing a MIP, please read below for more details around the lifecycle of a MIP as well as templates you should use to submit your ideas to the Mars community.
 
 ### Getting Started with MIPs (for Authors)
 
-MIPs are written using Markdown and hosted on GitHub. Please note that all MIPs (and their associated MRCs) must conform to specific [templates](https://github.com/mars-protocol/mips/blob/main/General-MIP-Template.md)!
+MIPs are written using Markdown and hosted on GitHub. Please note that all MIPs (and their associated MRCs) must conform to specific templates!
 
 ### Markdown
 
