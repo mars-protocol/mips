@@ -42,7 +42,7 @@
 
 ## New Asset Market Risk
 
-The following metrics, as defined in the [Red Bank Asset Listing Risk Framework](https://github.com/mars-protocol/mips/Red-Bank-Asset-Listing-Framework.md):
+The following metrics, as defined in the [Red Bank Asset Listing Risk Framework](https://github.com/mars-protocol/mips/blob/main/Red-Bank-Asset-Listing-Risk-Framework.md):
 
 * Maximum intraday drawdown.
 * Volatility.
@@ -59,7 +59,7 @@ Links to the following:
 * On-chain contracts.
 * The hash of the contract binary must match the code on GitHub.
 
-The following metrics, as defined in the [Red Bank Asset Listing Risk Framework](https://github.com/mars-protocol/mips/Red-Bank-Asset-Listing-Framework.md):
+The following metrics, as defined in the [Red Bank Asset Listing Risk Framework](https://github.com/mars-protocol/mips/blob/main/Red-Bank-Asset-Listing-Risk-Framework.md):
 
 * Time since launch.
 * Honey pot.
@@ -72,7 +72,7 @@ The following metrics, as defined in the [Red Bank Asset Listing Risk Framework]
 
 ## Risk Parameters Suggestion
 
-The information provided in the risk sections above should be used to score the asset and provide suggestions for its associated risk parameters, following the methodology provided in the [Red Bank Asset Listing Risk Framework](https://github.com/mars-protocol/mips/Red-Bank-Asset-Listing-Framework.md). These risk parameters are the following:
+The information provided in the risk sections above should be used to score the asset and provide suggestions for its associated risk parameters, following the methodology provided in the [Red Bank Asset Listing Risk Framework](https://github.com/mars-protocol/mips/blob/main/Red-Bank-Asset-Listing-Risk-Framework.md). These risk parameters are the following:
 
 * Loan-to-Value
 * Liquidation Threshold

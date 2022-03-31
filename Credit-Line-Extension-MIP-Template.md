@@ -66,7 +66,7 @@ For the other SCs and assets the Base SC interacts with:
 
 ## Risk Parameters Suggestion
 
-For each parameter suggestion, all relevant information used to determine that parameter should be provided, following the methodology described in the [Credit Line Extension Risk Framework](https://github.com/mars-protocol/mips/Credit-Line-Extension-Risk-Framework.md). The suggested parameters should be:
+For each parameter suggestion, all relevant information used to determine that parameter should be provided, following the methodology described in the [Credit Line Extension Risk Framework](https://github.com/mars-protocol/mips/blob/main/Credit-Line-Extension-Risk-Framework.md). The suggested parameters should be:
 
 - Maximum Leverage
 - Liquidation Threshold

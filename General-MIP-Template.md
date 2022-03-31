@@ -26,7 +26,7 @@
 
 ## Abstract
 
-- A 2-4 sentence description of the full MIP going through the problem it solves, how it's solved and who will and how it will be implemented.
+- A 2-4 sentence description of the full MIP going through the problem it solves, how it's solved and by whom and how it will be implemented.
 
 ## Motivation
 

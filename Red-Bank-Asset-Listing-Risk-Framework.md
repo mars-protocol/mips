@@ -27,7 +27,7 @@ Each of these categories, in turn, is measured through the following variables:
 * Team (Qualitative): Evaluates the reputation and integrity of the team behind the project. 
 * Key contracts centralization (Qualitative): Measures the level of centralization of the most important contracts of the protocol.
 
-** Oracle Risk:**
+**Oracle Risk:**
 * Evaluates the level of decentralization and robustness of the oracle implementation to be used to price a given asset within Mars.
 
 ## Scoring Methodology
