@@ -139,7 +139,7 @@ Please note that in the case of UI MRCs, there is no need for a Frozen Period.
 
 ### On-Chain Submission
 
-> In order to submit a MIP on-chain, the MIP submitter must call the submit_proposal function from the Martian Council contract. This can by interacting directly with smart contracts or by using the UI at marsprotocol.io and specifying the following parameters:
+In order to submit a MIP on-chain, the MIP submitter must call the submit_proposal function from the Martian Council contract. This can by interacting directly with smart contracts or by using the UI at marsprotocol.io and specifying the following parameters:
  
 * `sender` which is the address of the proposal submitter
 * `deposit_amount` which is the amount of MARS that must be locked in the Martian Council contract until the proposal expires (100,000 MARS at the time of this writing), is rejected or is approved by Martian Council voters. In case the proposal is rejected, the deposited MARS will be distributed to xMARS holders
