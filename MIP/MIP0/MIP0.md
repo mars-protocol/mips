@@ -104,7 +104,7 @@ Certain proposals for changes to certain configurable aspects of the Mars Smart 
  
 **Red Bank Asset Listing MIPs**
  
-Proposals to add support for one or more new assets within the Red Bank. Proposals should meet the specifications in the [Red Bank Asset Listing Risk Framework](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/red-bank-risk-framework) and adhere to the [New Red Bank Asset Listing Governance Process](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/new-red-bank-asset-listing-governance-process).
+Proposals to add support for one or more new assets within the Red Bank. Proposals should meet the specifications in the [Red Bank Asset Listing Risk Framework](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/red-bank-risk-framework) and adhere to the [New Red Bank Asset Listing Governance Process](https://github.com/mars-protocol/mips/blob/main/Red-Bank-Asset-Listing-Risk-Framework.md).
  
 **Credit Line Extension MIPs**
  
