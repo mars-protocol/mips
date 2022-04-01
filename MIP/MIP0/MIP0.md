@@ -245,7 +245,7 @@ Additionally, of course, we encourage further discussion and suggestions on the 
 
 ## Disclaimers/Conflicts of Interest
 
-This proposal is being made by Delphi Labs Ltd., a British Virgin Islands limited company. Delphi Labs engages in incubation, investment, research and development relevant to multiple ecosystems and protocols and was part of the joint venture which researched and developed the Mars Protocol. Delphi Labs is one of several entities which associate with one another under the “Delphi Digital” brand. Delphi Digital’s associated entities and/or equityholders or service providers of such entities hold ANC, ASTRO and MARS and may have financial interests in this proposal. Such entities and persons may also have financial interests in competing projects or ecosystems. These statements are intended to disclose relevant facts and to help identify potential conflicts of interest, and should not be misconstrued as a recommendation to purchase any token.
+This proposal is being made by Delphi Labs Ltd., a British Virgin Islands limited company. Delphi Labs engages in incubation, investment, research and development relevant to multiple ecosystems and protocols and was part of the joint venture which researched and developed the Mars Protocol. Delphi Labs is one of several entities which associate with one another under the “Delphi Digital” brand. Delphi Digital’s associated entities and/or equityholders or service providers of such entities hold MARS and may have financial interests in this proposal. Such entities and persons may also have financial interests in competing projects or ecosystems.
  
  
 ## Copyright
