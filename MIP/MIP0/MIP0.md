@@ -237,10 +237,7 @@ MIP Editors can correct issues themselves, but they are not required to.
 
 ## Governance Action
 
-Feedback for this proposal will be open for a minimum of 7 days. Adoption of MRC-0 does not impact on-chain governance, so its adoption will be determined by non-binding social-signal-boosting of support for the proposal by replying on this forum.
- 
- 
-Additionally, of course, we encourage further discussion and suggestions on the same topic.
+Feedback on MRC-0 will stay active for at least 7 days (5 days + a 2-day editing freeze on the proposal’s language). If the community signals support for the proposal, Delphi Labs will submit it for an on-chain vote. Should that vote pass, Mars Protocol will use the governance framework as the recommended model for all future upgrades. Additionally, of course, we encourage further discussion and suggestions on the same topic. 
  
 
 ## Disclaimers/Conflicts of Interest
