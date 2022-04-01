@@ -164,7 +164,7 @@ A MIP may be withdrawn at any point before it enters an on-chain vote. Note that
 
 ### **MIP Status Change Process**
 
-> If a MIP Author requests a status change for a MIP, a MIP Editor will review it. If the status change is warranted, the MIP Editor will change the status. Otherwise, the MIP Editor will revert and highlight issues for the MIP Author to fix before requesting another status change.
+If a MIP Author requests a status change for a MIP, a MIP Editor will review it. If the status change is warranted, the MIP Editor will change the status. Otherwise, the MIP Editor will revert and highlight issues for the MIP Author to fix before requesting another status change.
 
 
 ### MIP0: MIP Replacement Process
