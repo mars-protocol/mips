@@ -200,7 +200,7 @@ The [Technical MIP Template](https://github.com/mars-protocol/mips/blob/main/Tec
 
 ### General MIP Template
 
-* The [General MIP Template](https://github.com/mars-protocol/mips/General-MIP-Template.md) should be used for MIPs whenever a more specific template is not more appropriate.
+* The [General MIP Template](https://github.com/mars-protocol/mips/blob/main/General-MIP-Template.md) should be used for MIPs whenever a more specific template is not more appropriate.
 
 ### MIP0: MIP Editors
 
