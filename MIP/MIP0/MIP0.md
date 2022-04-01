@@ -108,7 +108,7 @@ Proposals to add support for one or more new assets within the Red Bank. Proposa
  
 **Credit Line Extension MIPs**
  
-Proposals from developers aiming to secure a virtual “credit line” from the Red Bank for unique applications such as leveraged yield farming. Proposals should meet the specifications of the [C2C Lending Credit Line Extension Risk Framework](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/c2c-lending-credit-line-extension-risk-framework) and adhere to the [New Credit Line Extension Governance Process](https://docs.marsprotocol.io/mars-protocol/protocol/welcome-to-mars/new-credit-line-extension-governance-process).
+Proposals from developers aiming to secure a virtual “credit line” from the Red Bank for unique applications such as leveraged yield farming. Proposals should meet the specifications of the [C2C Lending Credit Line Extension Risk Framework](https://github.com/mars-protocol/mips/blob/main/Credit-Line-Extension-Risk-Framework.md) and adhere to the [New Credit Line Extension Governance Process](https://github.com/mars-protocol/mips/blob/main/Credit-Line-Extension-MIP-Template.md).
 
 **General MIPs**
  
