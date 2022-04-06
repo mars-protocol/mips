@@ -1,4 +1,4 @@
-# Red Bank Asset Listing MIP Template
+# MIP-1: New Asset Listing - ANC
 
 ## Preamble
 
