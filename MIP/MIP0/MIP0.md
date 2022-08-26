@@ -182,6 +182,12 @@ MIPs can optionally refer to external materials. External materials must be adde
 Externally referenced materials are not MIP content and are not ratified when a MIP becomes Accepted unless it is explicitly stated otherwise in an MIP Component specification.
 
 
+### MIP0: Lifecycle Exceptions
+
+In the case of an MRC that aims to fix a smart contract vulnerability, the MRC can be published without a specific title or description or what it aims to solve and subsequently amended in case the on-chain proposal associated with it passes.
+
+This is to ensure that the vulnerability targeted by the MRC is not exploited prior to governance applying a fix.
+
 ### MIP0: MIP Templates
 
 ### Technical MIP Template
