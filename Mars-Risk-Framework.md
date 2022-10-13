@@ -224,7 +224,7 @@ The market risk component is an LTV adjustment defined such that the expected li
   <img src="./assets/formula-3.png" />
 </p>
 
-where $CVaR(99\%, Risk Horizon) ≤ 0$ is defined by using the historical-simulation approach, which implies that the probability distribution and corresponding tail-risk are estimated empirically from the observed price movements (percentage asset returns) over the past 365 days from the reference date. 
+where CVaR(99%, Risk Horizon) ≤ 0 is defined by using the historical-simulation approach, which implies that the probability distribution and corresponding tail-risk are estimated empirically from the observed price movements (percentage asset returns) over the past 365 days from the reference date. 
 
 *It’s important to highlight that this methodology only provides an estimate of extreme future price trajectories of a given asset. This estimate is based on past price performance and, as such, it should be understood as a backward-looking, fallible (though valuable) tool for predicting future prices.*
 
@@ -242,7 +242,11 @@ The liquidity risk component is calculated for each token as follows:
   <img src="./assets/formula-1.png" />
 </p>
 
-Here the above formula shows how much % the price will move down subject to $1 volume. 
+Here the multiplier 
+
+$0.02/(Depth_{-2\%})$ 
+
+shows how much % the price will move down subject to $1 volume. 
 
 Depth refers to the ability of the market to absorb the sale or exit of a position. A liquidator who liquidates a position of an ordinary user is not likely to impact the asset price. Selling a large block of assets though, can cause the price to fall when the asset is sold. Hence, the Swap Size is set to depend on the asset's deposit cap and is defined conservatively, assuming a medium-size transaction amount that can have a notable impact on the asset price as 1% of the deposit cap.
 
