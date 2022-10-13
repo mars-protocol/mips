@@ -244,7 +244,10 @@ The liquidity risk component is calculated for each token as follows:
 
 Here the multiplier 
 
-$0.02/(Depth_{-2\%})$ 
+
+<p align="center">
+  <img src="./assets/formula-5.png" />
+</p>
 
 shows how much % the price will move down subject to $1 volume. 
 
