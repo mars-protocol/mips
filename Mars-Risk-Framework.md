@@ -127,7 +127,7 @@ whereas if a metric increase has a negative effect on the final rating the formu
 
 $$ b_{ij} = { p_{max,j} - p_{ij} \over p_{max,j} -p_{min,j} } * 100,i ∈ [M], j ∈ [N] $$
 
-Using (1) and (2) each ith asset is described by a vector of normalized parameters
+Using the above formulas each ith asset is described by a vector of normalized parameters
 
 $$ b_{i} = (b_{i1},…,b_{iN})^T, i∈[M] $$
 
@@ -220,7 +220,9 @@ The $LTV_{cap}$  serves to limit the LTV obtained from the historical data to en
 
 The market risk component is an LTV adjustment defined such that the expected likelihood* of the price of the asset dropping more than the market risk component is 1%. Hence the market risk component is defined as the 99% conditional value-at-risk with a given risk horizon (average of the “extreme” returns in the left tail of the asset returns distribution, beyond the value at risk cutoff point):
 
-$$ Market Risk Component= -CVaR(99\%, Risk Horizon) $$
+<p align="center">
+  <img src="./assets/formula-3.png" />
+</p>
 
 where $CVaR(99\%, Risk Horizon) ≤ 0$ is defined by using the historical-simulation approach, which implies that the probability distribution and corresponding tail-risk are estimated empirically from the observed price movements (percentage asset returns) over the past 365 days from the reference date. 
 
@@ -240,7 +242,7 @@ The liquidity risk component is calculated for each token as follows:
   <img src="./assets/formula-1.png" />
 </p>
 
-Here the multiplier 0.02/($Depth_{-2\%}$$) shows how much % the price will move down subject to $1 volume. 
+Here the above formula shows how much % the price will move down subject to $1 volume. 
 
 Depth refers to the ability of the market to absorb the sale or exit of a position. A liquidator who liquidates a position of an ordinary user is not likely to impact the asset price. Selling a large block of assets though, can cause the price to fall when the asset is sold. Hence, the Swap Size is set to depend on the asset's deposit cap and is defined conservatively, assuming a medium-size transaction amount that can have a notable impact on the asset price as 1% of the deposit cap.
 
@@ -256,7 +258,9 @@ The risk horizon and $LTV_{cap}$ for each token’s category are provided in the
 
 The Liquidation LTV is defined based on the $CVaR(99\%, horizon)$ with the horizon determined by the token’s quality category. The safety margin is defined as the absolute difference between the CVaR calculated at the defined horizon plus 1 day and the $CVaR(99\%, horizon)$:
 
-$$ Margin \ of \ Safety= -(CVaR(99\%, horizon+1)-CVaR(99\%, horizon)) $$
+<p align="center">
+  <img src="./assets/formula-4.png" />
+</p>
 
 Thus, the margin of safety is defined by the relative price drop incurred in one additional day in relation to the horizon used to determine the Liquidation LTV.
 
@@ -296,7 +300,7 @@ $$ IL = 2 { \sqrt{R} \over R+1 } + 1 $$
 
 where $R = { P_{1} \over P_{0} } = { 1 + r^x_{1} \over 1 + r^y_{1} }$, $r^x_{1}$ and $r^y_{1}$ are simple assets’ returns calculated over the unit of time and Pi is the pool price. *Note that the above IL formula excludes trading fees and other rewards LP token holders may accrue. This is intentional and is done to calculate a worse-case IL, which ultimately generates a more conservative LTV for the LP token.*
 
-From (11), historical ILs for each pool are calculated by using the 10-day overlapping asset returns over the past 365 days. 
+From the above formula, historical ILs for each pool are calculated by using the 10-day overlapping asset returns over the past 365 days. 
 
 Then the expected IL is estimated by using the historical simulation value-at-risk approach. Based on the empirical distribution of ILs, value-at-risk measures the loss value that will not be exceeded with a probability of 95% over a 10-day risk horizon:
 
