@@ -222,7 +222,9 @@ The liquidity risk adjustment is defined per asset using the -2% dollar depth ag
 
 The liquidity risk component is calculated for each token as follows:
 
-$$ Liquidity Risk Component  = Swap Size \ \$ * { 0.02 \over Depth_{-2\%} \$ } $$
+<p align="center">
+  <img src="./assets/formula-1.png" />
+</p>
 
 Here the multiplier 0.02/($Depth_{-2\%}$$) shows how much % the price will move down subject to $1 volume. 
 
@@ -280,7 +282,9 @@ From (11), historical ILs for each pool are calculated by using the 10-day overl
 
 Then the expected IL is estimated by using the historical simulation value-at-risk approach. Based on the empirical distribution of ILs, value-at-risk measures the loss value that will not be exceeded with a probability of 95% over a 10-day risk horizon:
 
-$$ IL \ Risk \ Adjustment = 1+VaR_{95\%,10-day}(IL distribution) $$
+<p align="center">
+  <img src="./assets/formula-2.png" />
+</p>
 
 The risk horizon represents the longest period needed for liquidation (the longest period over which the protocol can be exposed to the position, i.e., liquidating the LP token).
 
