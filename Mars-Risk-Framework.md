@@ -40,12 +40,15 @@ The following criteria are suggested as an initial filter for whitelisting proto
 
 **Technical risk:**
 
-![](./assets/fig-1.png)
-
+<p align="center">
+  <img src="./assets/fig-1.png" />
+</p>
 
 **Centralization risk:**
 
-![](./assets/fig-2.png)
+<p align="center">
+  <img src="./assets/fig-2.png" />
+</p>
 
 *Note: assets and protocols controlled by unaccountable, affiliated, and/or centralized entities should not be accepted into Mars.*
 
@@ -53,18 +56,23 @@ The following criteria are suggested as an initial filter for whitelisting proto
 
 **Oracle risk:**
 
-![](./assets/fig-3.png)
+<p align="center">
+  <img src="./assets/fig-3.png" />
+</p>
 
 *Note: given the oracle's critical importance for the platform, assets without robust oracles should not be accepted into Mars.*
 
 **Technical risk:**
 
-![](./assets/fig-4.png)
+<p align="center">
+  <img src="./assets/fig-4.png" />
+</p>
 
 **Centralization risk:**
 
-![](./assets/fig-5.png)
-
+<p align="center">
+  <img src="./assets/fig-5.png" />
+</p>
 
 *Note: for bridged assets, both the bridge itself and the token should pass the minimum requirements. For LP tokens, both the DEX and the token should pass the minimum requirements. This applies to the technical and centralization risk requirements.*
 
@@ -133,7 +141,9 @@ Once scores for all metrics are calculated, they are averaged to get the asset�
 
 Let asset X have the following scores:
 
-![](./assets/fig-6.png)
+<p align="center">
+  <img src="./assets/fig-6.png" />
+</p>
 
 Then the total score is:
 
@@ -155,7 +165,9 @@ $$ floor+∆,floor+2∆,…,floor+(k-1)∆ $$
 
 Each asset is assigned a quality category depending on the interval in which the value of the final score falls, according to the following table:
 
-![](./assets/fig-7.png)
+<p align="center">
+  <img src="./assets/fig-7.png" />
+</p>
 
 *<p style="text-align: center;">Table 1. Bins for quality categories</p>*
 
@@ -163,7 +175,9 @@ These categories are used to define the maximum allowable LTVs within each categ
 
 The procedure for determining the final score is similar for new assets (not included in the initial data sample). Firstly, all metrics are calculated based on historical data and normalized using the minimum and maximum values previously defined from the sample (see the table 2 below). If the metric value exceeds the maximum or below the minimum, it is assumed to be equal to the maximum or minimum value, respectively. Finally, the obtained scores are averaged to get the total score.
 
-![](./assets/fig-8.png)
+<p align="center">
+  <img src="./assets/fig-8.png" />
+</p>
 
 *<p style="text-align: center;">Table 2. Min and max values used for metrics normalization</p>*
 
@@ -232,7 +246,9 @@ Depth refers to the ability of the market to absorb the sale or exit of a positi
 
 The risk horizon and $LTV_{cap}$ for each token’s category are provided in the table below:
 
-![](./assets/fig-9.png)
+<p align="center">
+  <img src="./assets/fig-9.png" />
+</p>
 
 *<p style="text-align: center;">Table 3. Risk horizons and LTV caps per asset’s quality category</p>*
 
@@ -248,7 +264,9 @@ The higher the price volatility of the token, the more the price can fall with a
 
 The following caps are applied to the margin of safety derived from the historical data depending on the token’s quality category:
 
-![](./assets/fig-10.png)
+<p align="center">
+  <img src="./assets/fig-10.png" />
+</p>
 
 *<p style="text-align: center;">Table 4. Margin of Safety caps per token’s quality category</p>*
 
