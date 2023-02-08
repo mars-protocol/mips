@@ -1,6 +1,6 @@
 # Mars Improvement Proposals (MIPs)
 
-The Martian Council is a smart contract governance DAO. It is comprised of all MARS holders who have staked either directly or via delegation, as well as  the Mars Protocol builders who hold [smart-contract-locked MARS](https://github.com/mars-protocol/periphery/tree/main/contracts/vesting).
+The Martian Council is comprised of all MARS holders who have staked either directly or via delegation, as well as the Mars Protocol builders who hold [smart-contract-locked MARS](https://github.com/mars-protocol/periphery/tree/main/contracts/vesting).
 
 Note that all MARS holders can cast a vote, however their voting power will be 0 in the event they haven’t delegated or staked. Mars builders are not permitted to stake or delegate any tokens that have yet to vest, but can cast votes and have a voting power that is non zero.
 
@@ -207,10 +207,6 @@ A MIP Editor’s responsibilities include:
 
 MIP Editors can correct issues themselves, but they are not required to.
 
-## Governance Action
-
-Feedback on MRC-0 will stay active for at least 7 days (5 days + a 2-day editing freeze on the proposal’s language). If the community signals support for the proposal, Delphi Labs will submit it for an on-chain vote. Should that vote pass, Mars will use this governance framework as the recommended model for all future upgrades. Additionally, of course, we encourage further discussion and suggestions on the same topic.
-
 **Disclaimers/Disclosures**
 
 This proposal is being made by Delphi Labs Ltd., a British Virgin Islands limited company. Delphi Labs engages in incubation, investment, research and development relevant to multiple ecosystems and protocols, including the Mars Protocol. Delphi Labs and certain of its service providers and equity holders own MARS tokens and have financial interests related to this proposal. Additionally, Delphi Labs is one of several entities associated with one another under the “Delphi Digital” brand. Delphi Digital’s associated entities and/or equityholders or service providers of such entities may hold MARS and may have financial interests related to this proposal. All such entities, service providers, equity holders and other related persons may also have financial interests in complementary or competing projects or ecosystems, entities or tokens, including Osmosis/OSMO. These statements are intended to disclose relevant facts and to help identify potential conflicts of interest, and should not be misconstrued as a complete description of all relevant interests or conflicts of interests; nor should they be construed as a recommendation to purchase or acquire any token or other asset..
@@ -220,3 +216,25 @@ This proposal is also subject to and qualified by the [Mars Disclaimers/Disclosu
 ## Copyright
 
 Copyright and related rights waived via [CC0 1](https://creativecommons.org/publicdomain/zero/1.0/).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
