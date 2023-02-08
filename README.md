@@ -2,9 +2,9 @@
 
 The Martian Council is comprised of all MARS holders who have staked either directly or via delegation, as well as the Mars Protocol builders who hold [smart-contract-locked MARS](https://github.com/mars-protocol/periphery/tree/main/contracts/vesting).
 
-Note that all MARS holders can cast a vote, however their voting power will be 0 in the event they haven’t delegated or staked. Mars builders are not permitted to stake or delegate any tokens that have yet to vest, but can cast votes and have a voting power that is non zero.
+<!-- Note that all MARS holders can cast a vote, however their voting power will be 0 in the event they haven’t delegated or staked. Mars builders are not permitted to stake or delegate any tokens that have yet to vest, but can cast votes and have a voting power that is non zero. -->
 
-Governance proposals can be submitted to the Martian council by any MARS token holder. The entire process first requires any individual to compose a governance proposal and later publish it on the [Mars forum](https://forum.marsprotocol.io/).  An on-chain governance vote is required to determine whether such a proposal may be implemented. Such a proposal must be submitted in accordance with the Mars governance protocol standards and criteria (which includes an upfront (liquid i.e. unstaked) MARS deposit requirement–see below). 
+Governance proposals can be submitted to the Martian council by any MARS token holder. The entire process first requires any individual to compose a governance proposal and later publish it on the [Mars forum](https://forum.marsprotocol.io/). An on-chain governance vote is required to determine whether such a proposal may be implemented. Such a proposal must be submitted in accordance with the Mars governance protocol standards and criteria (which includes an upfront (liquid i.e. unstaked) MARS deposit requirement–see below). 
 
 Governance proposals may cover any topic related to Mars; however, the exact nature of these proposals–and the consequences of an approval or rejection–will vary depending on the category and topic of the proposal. 
 
@@ -17,7 +17,7 @@ In summary, there are two main categories of governance proposals:
 1. **Binding proposals:** Are proposals to make changes to the configurable aspects of the Mars Hub and/or the Mars Outposts; because the Martian Council controls these pieces of infrastructure, the Martian Council’s vote is both necessary and sufficient to approve these changes.
 2. **Signaling proposals:** Are all other governance proposals made to the Martian Council–for example, signaling a preference for certain code or functions to be added to Mars or the marsprotocol.io website. Signaling proposals (including this proposal) are voted upon on-chain in the same way as binding proposals. However, because these proposals require off-chain implementation actions by extrinsic parties–such as a website operator, a smart contract developer, or others–the Martian Council’s approval is neither necessary nor sufficient to cause these proposals to be implemented. Therefore, these proposals merely signal the Martian Council’s support for or opposition to the proposed outcome.
 
-We foresee four main governance proposal topic categories:
+Furthermore, there are four main governance proposal topic categories:
 
 1. **Technical Proposals:** Certain proposals for changes to certain configurable aspects of Mars Hub and/or the Mars Outposts (binding), which can be modified directly by on-chain votes, or code changes to the Mars Protocol (signaling), which require upgrading the protocol.
 2. **Red Bank Asset Listing Proposals:** Proposals to add or remove support for one or more assets within the Red Bank (typically binding).
@@ -40,9 +40,9 @@ The Mars Improvement Proposals (MIPs) Framework defines all subsequent MIPs to u
 
 ## Motivation
 
-For Mars to successfully operate as a fully decentralized and self-sustainable DAO, a formalized process of decision-making is required. In a permissionless protocol, everyone should be able to propose changes and improvements.
+For Mars to successfully operate as a fully decentralized and self-sustainable user-governed ecosystem, a formalized process of decision-making is required. In a permissionless protocol, everyone should be able to propose changes and improvements.
 
-The MIP Framework serves to empower each Martian Council participant by giving them a standardized way of interacting with the wider DAO and defining its future shape.
+The MIP Framework serves to empower each member of the Martian Council by giving them a standardized way of conducting voting regarding Mars issues. 
 
 ## Specification
 
@@ -65,6 +65,7 @@ The MIP Framework serves to empower each Martian Council participant by giving t
 ### MIP Proposal Type Categories
 
 There are two main categories of Martian Council governance proposals:
+
 1. **Binding proposals:** Are proposals to make changes to the configurable aspects of the Mars Smart Contracts; because the Martian Council controls these smart contracts, the Martian Council’s vote is both necessary and sufficient to approve these changes.
 2. **Signaling proposals:** Are all other governance proposals made to the Martian Council–for example, signaling a preference for certain code or functions to be added to Mars or the marsprotocol.io website. Signaling proposals (including this proposal) are voted upon on-chain in the same way as binding proposals. However, because these proposals require off-chain implementation actions by extrinsic parties–such as a website operator, a smart contract developer, or others–the Martian Council’s approval is neither necessary nor sufficient to cause these proposals to be implemented. Therefore, these proposals merely signal the Martian Council’s support for or opposition to the proposed outcome.
 
@@ -100,7 +101,7 @@ A general category for proposals that do not fall under the above categories. Ge
 #### MIP Lifecycle Breakdown
 
 1. **Conception:** A MIP Author posts a MRC proposal on the [Mars Protocol forum](https://forum.marsprotocol.io/) under the appropriate category. From this point on, MIP Editors will be available to assist the MIP Author.
-2. **Approved by MIP Editor(s):** A MIP Editor verifies that the posted MRC proposal:
+2. **Approved by MIP Editor(s):**A MIP Editor verifies that the posted MRC proposal:
 - Follows the appropriate format of the MIP Template for its type.
 - Is either an original MIP or a replacement for an older MIP.
 - Has been submitted to the [MIP GitHub](https://github.com/mars-protocol/mips) repository with a Pull Request by either the MIP Author or a MIP Editor.
@@ -121,7 +122,7 @@ Please note that in the case of UI MRCs, there is no need for a Frozen Period.
 
 The following steps must be completed to submit a proposal on chain and take it to a vote.
 
-[On-chain Submission](./on-chain-submission)
+[On-chain Submission](https://docs.marsprotocol.io/docs/govern/on-chain-submission)
 
 #### Resubmission
 
@@ -129,8 +130,7 @@ A MIP can be resubmitted for an on-chain vote up to 3 times without having to go
 
 #### Other MIP Statuses
 
-- **Withdrawn:** Assigned when an MIP Author withdraws their MIP proposal.
-A MIP may be withdrawn at any point before it enters an on-chain vote. Note that a withdrawn proposal can be taken over from the original Author with a simple transition facilitated by a MIP Editor and the respective parties. If the original MIP Author ceases to be available, a MIP Editor may proceed with the transfer of authorship.
+- **Withdrawn:** Assigned when an MIP Author withdraws their MIP proposal. A MIP may be withdrawn at any point before it enters an on-chain vote. Note that a withdrawn proposal can be taken over from the original Author with a simple transition facilitated by a MIP Editor and the respective parties. If the original MIP Author ceases to be available, a MIP Editor may proceed with the transfer of authorship.
 - **Deferred:** Assigned when a proposal has been deemed as not ready or not a priority but can be re-proposed at a later date. This status can be assigned during MRC or by a rejecting forum poll.
 - **Obsolete:** Assigned when:
     - A MIP has been superseded or deprecated.
@@ -209,7 +209,7 @@ MIP Editors can correct issues themselves, but they are not required to.
 
 **Disclaimers/Disclosures**
 
-This proposal is being made by Delphi Labs Ltd., a British Virgin Islands limited company. Delphi Labs engages in incubation, investment, research and development relevant to multiple ecosystems and protocols, including the Mars Protocol. Delphi Labs and certain of its service providers and equity holders own MARS tokens and have financial interests related to this proposal. Additionally, Delphi Labs is one of several entities associated with one another under the “Delphi Digital” brand. Delphi Digital’s associated entities and/or equityholders or service providers of such entities may hold MARS and may have financial interests related to this proposal. All such entities, service providers, equity holders and other related persons may also have financial interests in complementary or competing projects or ecosystems, entities or tokens, including Osmosis/OSMO. These statements are intended to disclose relevant facts and to help identify potential conflicts of interest, and should not be misconstrued as a complete description of all relevant interests or conflicts of interests; nor should they be construed as a recommendation to purchase or acquire any token or other asset..
+This proposal is being made by Delphi Labs Ltd., a British Virgin Islands limited company. Delphi Labs engages in incubation, investment, research and development relevant to multiple ecosystems and protocols, including the Mars Protocol. Delphi Labs and certain of its service providers and equity holders own MARS tokens and have financial interests related to this proposal. Additionally, Delphi Labs is one of several entities associated with one another under the “Delphi Digital” brand. Delphi Digital’s associated entities and/or equityholders or service providers of such entities may hold MARS and may have financial interests related to this proposal. All such entities, service providers, equity holders and other related persons may also have financial interests in complementary or competing projects or ecosystems, entities or tokens, including Osmosis/OSMO. These statements are intended to disclose relevant facts and to help identify potential conflicts of interest, and should not be misconstrued as a complete description of all relevant interests or conflicts of interests; nor should they be construed as a recommendation to purchase or acquire any token or security.
 
 This proposal is also subject to and qualified by the [Mars Disclaimers/Disclosures](https://mars-protocol.medium.com/mars-disclaimers-disclosures-f44cc7c54a33). Delphi Labs may lack access to all relevant facts or may have failed to give appropriate weighting to available facts. Delphi Labs is not making any representation, warranty or guarantee regarding the accuracy or completeness of the statements herein, and Delphi Labs shall have no liability in the event of losses or damages ensuing from approval or rejection or other handling of the proposal. Each user and voter should undertake their own research and make their own independent interpretation and analysis of all relevant facts and issues to arrive at their own personal determinations of how to vote on the proposal.
 
