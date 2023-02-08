@@ -1,4 +1,4 @@
-# MRC-0: The Mars Improvement Proposal (MIPs) Framework
+# MIP-0: The Mars Improvement Proposal (MIPs) Framework
 
 ## Proposal Authors
 
